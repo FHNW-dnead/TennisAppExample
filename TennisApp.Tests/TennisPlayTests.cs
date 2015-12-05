@@ -70,7 +70,7 @@ namespace TennisApp.Tests
             checkAllScores(game);
         }
 
-        public void checkAllScores(TennisGame game)
+        public void checkAllScores(ITennisGame game)
         {
             int highestScore = Math.Max(this.player1Score, this.player2Score);
             for (int i = 0; i < highestScore; i++)
@@ -88,7 +88,7 @@ namespace TennisApp.Tests
     [TestFixture()]
     public class ExampleGameTennisTest
     {
-        public void RealisticTennisGame(TennisGame game)
+        public void RealisticTennisGame(ITennisGame game)
         {
             String[] points = { "player1", "player1", "player2", "player2", "player1", "player1" };
             String[] expected_scores = { "Fifteen-Love", "Thirty-Love", "Thirty-Fifteen", "Thirty-All", "Forty-Thirty", "Win for player1" };

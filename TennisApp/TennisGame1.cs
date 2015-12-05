@@ -3,7 +3,7 @@ using System.Runtime.Serialization;
 
 namespace TennisApp
 {
-    public class TennisGame1 : TennisGame
+    public class TennisGame1 : ITennisGame
     {
         private int p2;
         private int p1;
